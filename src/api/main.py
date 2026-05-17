@@ -45,7 +45,7 @@ app.add_middleware(
 
 class QueryRequest(BaseModel):
     question: str = Field(..., min_length=5, max_length=1000,
-                          example="Wie lange ist die Kündigungsfrist nach 3 Jahren?")
+                      examples=["Wie lange ist die Kündigungsfrist nach 3 Jahren?"])
     session_id: str = Field(default_factory=lambda: str(uuid.uuid4()))
 
 
