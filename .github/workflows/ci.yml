@@ -30,8 +30,9 @@ jobs:
         run: |
           pip install mypy
           mypy src/ --ignore-missing-imports
-
+          
       - name: Run tests
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          PYTHONPATH: .
         run: pytest tests/ -v --tb=short
