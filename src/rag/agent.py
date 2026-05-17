@@ -18,6 +18,7 @@ from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.tools import tool
 from langchain_groq import ChatGroq
 from sentence_transformers import CrossEncoder
+from groq import SecretStr
 
 from src.ingestion.vectorstore import load_vector_store
 
@@ -114,11 +115,11 @@ Diskriminierungsverbot, Lohnfortzahlung im Krankheitsfall."""
 def build_agent() -> AgentExecutor:
     """Build LangChain tool-calling agent with Groq (Llama 3.1 70B) and Langfuse observability."""
     llm = ChatGroq(
-        model="llama-3.3-70b-versatile",  # open-source, free
-        temperature=0,
-        api_key=os.environ["GROQ_API_KEY"],
-    )
-
+    model="llama-3.3-70b-versatile",
+    temperature=0,
+    api_key=os.environ["GROQ_API_KEY"],  # type: ignore[arg-type]
+    stop_sequences=None,  # type: ignore[call-arg]
+)
     tools = [search_arbeitsrecht, explain_paragraph]
 
     prompt = ChatPromptTemplate.from_messages([
