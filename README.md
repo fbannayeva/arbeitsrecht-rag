@@ -34,7 +34,7 @@ A key engineering consideration for any AI project is inference cost. This proje
 | Reranker | CrossEncoder (local CPU) | Cohere Rerank API (~$2 / 1K queries) | ~100% |
 | Vector DB | Qdrant local / Qdrant Cloud free | Pinecone Starter ($70/mo) | ~100% |
 
-> **Result: $0 inference cost for development and light production use.** For enterprise scale, Groq's paid tier or a self-hosted Ollama instance (Llama 3.1 on GPU) replaces the free tier with the same code — a one-line config change.
+> **Result: $0 inference cost for development and light production use.** For enterprise scale, Groq's paid tier or a self-hosted Ollama instance (Llama 3.3 on GPU) replaces the free tier with the same code — a one-line config change.
 
 ---
 
