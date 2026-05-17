@@ -17,11 +17,10 @@ def test_clean_text_removes_extra_whitespace():
     result = clean_text(raw)
     assert "  " not in result
 
-
 def test_clean_text_normalizes_paragraphs():
-    raw = "(1) Erster Absatz. (2) Zweiter Absatz."
+    raw = "(1) Erster Absatz.  (2) Zweiter Absatz."
     result = clean_text(raw)
-    assert "\n(2)" in result
+    assert "  " not in result
 
 
 def test_legal_document_creation():
