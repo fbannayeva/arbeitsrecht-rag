@@ -58,10 +58,10 @@ User Question (DE)
 │         │                                   │
 │         ▼                                   │
 │  CrossEncoder Reranker                      │
-│  (ms-marco-MiniLM-L-6-v2)                  │
+│  (ms-marco-MiniLM-L-6-v2)                   │
 │         │                                   │
 │         ▼                                   │
-│  Llama 3.3 70B via Groq (cited answer, DE) │
+│  Llama 3.3 70B via Groq (cited answer, DE)  │
 │         │                                   │
 │  Langfuse Trace ──────────────────►  UI     │
 └─────────────────────────────────────────────┘
