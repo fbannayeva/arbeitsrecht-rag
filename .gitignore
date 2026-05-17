@@ -1,0 +1,32 @@
+# Environment
+.env
+.env.*
+!.env.example
+venv/
+.venv/
+
+# Qdrant local data
+data/qdrant_local/
+data/raw/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# Models cache (large files)
+.cache/
+~/.cache/huggingface/
+
+# VS Code
+.vscode/
+
+# Mac
+.DS_Store
+
+# Logs
+*.log
