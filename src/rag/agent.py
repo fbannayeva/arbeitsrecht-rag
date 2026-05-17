@@ -18,7 +18,6 @@ from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.tools import tool
 from langchain_groq import ChatGroq
 from sentence_transformers import CrossEncoder
-from groq import SecretStr
 
 from src.ingestion.vectorstore import load_vector_store
 
