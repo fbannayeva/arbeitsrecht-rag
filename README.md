@@ -237,7 +237,7 @@ Response:
 
 This is a portfolio project. In a production legal knowledge base, the following would be added:
 
-- **LLM scale-up:** swap Groq free tier → self-hosted Llama 3.1 on GPU (Ollama / vLLM) — same LangChain interface, one config change
+- **LLM scale-up:** swap Groq free tier → self-hosted Llama 3.3 on GPU (Ollama / vLLM) — same LangChain interface, one config change
 - **Auth:** OAuth2 / SSO (e.g. Azure Entra ID) for firm-internal deployment
 - **Scale:** Qdrant Cloud or Azure AI Search instead of local disk
 - **Data:** Private case documents, internal memos via SharePoint ingestion pipeline
