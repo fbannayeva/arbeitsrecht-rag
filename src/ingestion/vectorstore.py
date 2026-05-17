@@ -5,7 +5,6 @@ store in Qdrant with rich metadata for filtered retrieval.
 
 import logging
 import uuid
-from pathlib import Path
 
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import HuggingFaceEmbeddings
